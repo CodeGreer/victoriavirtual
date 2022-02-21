@@ -1,0 +1,379 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 0.063em; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+
+/* All of the setup and non media query CSS */
+
+@font-face {
+  font-family: 'FontName';
+  src: url(../fonts/sourcesanspro-regular-webfont.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/sourcesanspro-regular-webfont.woff) format('woff'), /* Pretty Modern Browsers */
+       url(../fonts/sourcesanspro-regular-webfont.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/sourcesanspro-regular-webfont.svg) format('svg'); /* Legacy iOS */
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'SortsMill';
+  src: url(../fonts/SortsMillGoudy-Regular.ttf) format('truetype');
+    font-display: swap;
+}
+
+html {
+    font: normal 100% 'font name', serif; /* Check this line and if it's necessary */
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    
+    font-family: 'FontName', sans-serif;
+    font-size: 100%;
+    color: #000;
+    line-height: 1.625; /* 26px */
+}
+
+/* Headings */
+
+h1 {
+    font-family: 'SortsMill', serif;
+    font-size: 7vw;
+    color: #3a5c69;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'FontName', sans-serif;
+    font-size: 1.5em;
+    color: #000;
+}
+
+h3 {
+    font-family: 'FontName', sans-serif;
+    font-size: 1em;
+    color: #000;
+}
+
+/* General Styling */
+
+header, nav, main, footer {
+    width: 100%;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+/* Flexbox elements */
+
+nav,
+main,
+footer {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+}
+
+/* Header */
+
+header {
+   
+}
+
+/* Menu */ 
+
+nav {
+
+} 
+
+nav ul {
+    width: 100%;
+    text-align: center;
+}
+
+na ul li {
+    display: inline-block;
+}
+
+a.menu:link {color: #000; text-decoration: none;} 
+a.menu:visited {color: #000;}  
+a.menu:hover {color: #000; }  
+a.menu:active {color: #000;}  
+
+
+/* Main */
+
+main {
+    height: 100vh;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    
+}
+
+section {
+    
+}
+
+/* Footer */ 
+    
+footer{
+
+}
+
+
+/**** Mobile Media Queries ****/
+
+
+/*** Up to 5200px ***/
+@media only screen and (max-width: 325em) {
+  
+    body {
+        
+    } 
+}
+
+/*** Up to 3904px ***/
+@media only screen and (max-width: 244em) {
+    
+    body {
+        
+    }         
+}
+
+/*** Up to 2640px ***/
+@media only screen and (max-width: 165em) {
+    
+    body {
+         
+    }   
+}
+
+/*** Up to 2000px ***/
+@media only screen and (max-width: 125em) {
+    
+    body {
+         
+    }     
+}
+
+/*** Up to 1840px ***/
+@media only screen and (max-width: 115em) {
+ 
+    body {
+         
+    }        
+}
+
+/*** Up to 1520px ***/
+@media only screen and (max-width: 95em) {
+ 
+    body {
+    
+    }        
+}
+
+/*** Up to 1360px ***/
+@media only screen and (max-width: 85em) {
+   
+    body {
+
+    } 
+}
+    
+/*** Up to 1280px ***/    
+@media only screen and (max-width: 80em) {
+    
+    body {
+     
+    } 
+}
+
+/*** Up to 1200px ***/
+@media only screen and (max-width: 75em) {
+  
+    body {
+      
+    }   
+}
+
+/*** Up to 1120px ***/
+@media only screen and (max-width: 70em) {
+  
+    body {
+       
+    }         
+}
+
+/*** Up to 1040px ***/
+@media only screen and (max-width: 65em) {
+    
+    body {
+        
+    }    
+}
+
+/*** Up to 976px ***/
+@media only screen and (max-width: 61em) {
+  
+    body {
+    
+    }      
+}
+
+/*** Up to 880px ***/
+@media only screen and (max-width: 55em) {
+  
+    main {
+    width: 70%;
+}
+    
+    h1 {
+        font-size: 10vw;
+    }
+ 
+}
+
+
+/************ Change Format ************/
+
+
+/*** Up to 800px ***/
+@media only screen and (max-width: 50em) {
+ 
+    body {
+    
+    }    
+}
+
+/*** Up to 720px ***/
+@media only screen and (max-width: 45em) {
+ 
+    body {
+     
+    }          
+}
+
+/*** Up to 640px ***/
+@media only screen and (max-width: 40em) {
+    
+    body {
+        
+    }      
+}
+
+/*** Up to 560px ***/
+@media only screen and (max-width: 35em) {
+  
+    main {
+    width: 90%;
+}    
+    
+    h1 {
+        font-size: 14vw;
+    }
+ 
+}
+
+/*** Up to 480px ***/
+@media only screen and (max-width: 30em) {
+    
+    body {
+      
+    }        
+}
+
+/*** Up to 400px ***/
+@media only screen and (max-width: 25em) {
+
+    body {
+       
+    }   
+}
+
+/*** Up to 336px ***/
+@media only screen and (max-width: 21em) {
+   
+    body {
+      
+    }  
+}
+
+/*** Up to 256px ***/
+@media only screen and (max-width: 16em) {
+
+    body {
+      
+    }   
+}
+
+/*** Up to 224px ***/
+@media only screen and (max-width: 14em) {
+
+    body {
+        
+    }    
+}
