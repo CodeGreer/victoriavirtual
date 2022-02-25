@@ -1,3 +1,6 @@
 # ignore ALL files in ANY directory named temp
 misc/
 js/
+
+maria-index.html
+css/maria-style.css
