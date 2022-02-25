@@ -50,14 +50,6 @@ input, select { vertical-align: middle; }
 
 /* All of the setup and non media query CSS */
 
-@font-face {
-  font-family: 'FontName';
-  src: url(../fonts/sourcesanspro-regular-webfont.woff2) format('woff2'), /* Super Modern Browsers */
-       url(../fonts/sourcesanspro-regular-webfont.woff) format('woff'), /* Pretty Modern Browsers */
-       url(../fonts/sourcesanspro-regular-webfont.ttf) format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/sourcesanspro-regular-webfont.svg) format('svg'); /* Legacy iOS */
-    font-display: swap;
-}
 
 @font-face {
   font-family: 'SortsMill';
@@ -87,44 +79,21 @@ h1 {
     font-size: 7vw;
     color: #3a5c69;
     text-align: center;
+    margin-top: 2em;
 }
 
-h2 {
-    font-family: 'FontName', sans-serif;
-    font-size: 1.5em;
-    color: #000;
-}
-
-h3 {
-    font-family: 'FontName', sans-serif;
-    font-size: 1em;
-    color: #000;
-}
 
 /* General Styling */
 
-header, nav, main, footer {
-    width: 100%;
-}
-
-p {
-    font-size: 1.25em;
-}
 
 img {
     max-width: 100%;
 }
 
 
-ul li {
-    list-style-type: none;
-}
-
 /* Flexbox elements */
 
-nav,
-main,
-footer {
+main {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -133,52 +102,15 @@ footer {
     display: -webkit-flex;
 }
 
-/* Header */
-
-header {
-   
-}
-
-/* Menu */ 
-
-nav {
-
-} 
-
-nav ul {
-    width: 100%;
-    text-align: center;
-}
-
-na ul li {
-    display: inline-block;
-}
-
-a.menu:link {color: #000; text-decoration: none;} 
-a.menu:visited {color: #000;}  
-a.menu:hover {color: #000; }  
-a.menu:active {color: #000;}  
-
-
 /* Main */
 
 main {
     height: 100vh;
     width: 50%;
     margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-}
-
-aside {
-    
-}
-
-section {
-    display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .commerce {
@@ -186,111 +118,12 @@ section {
     margin-top: 2em;
 }
 
-/* Footer */ 
-    
-footer{
-
-}
 
 
 /**** Mobile Media Queries ****/
 
 
-/*** Up to 5200px ***/
-@media only screen and (max-width: 325em) {
-  
-    body {
-        
-    } 
-}
 
-/*** Up to 3904px ***/
-@media only screen and (max-width: 244em) {
-    
-    body {
-        
-    }         
-}
-
-/*** Up to 2640px ***/
-@media only screen and (max-width: 165em) {
-    
-    body {
-         
-    }   
-}
-
-/*** Up to 2000px ***/
-@media only screen and (max-width: 125em) {
-    
-    body {
-         
-    }     
-}
-
-/*** Up to 1840px ***/
-@media only screen and (max-width: 115em) {
- 
-    body {
-         
-    }        
-}
-
-/*** Up to 1520px ***/
-@media only screen and (max-width: 95em) {
- 
-    body {
-    
-    }        
-}
-
-/*** Up to 1360px ***/
-@media only screen and (max-width: 85em) {
-   
-    body {
-
-    } 
-}
-    
-/*** Up to 1280px ***/    
-@media only screen and (max-width: 80em) {
-    
-    body {
-     
-    } 
-}
-
-/*** Up to 1200px ***/
-@media only screen and (max-width: 75em) {
-  
-    body {
-      
-    }   
-}
-
-/*** Up to 1120px ***/
-@media only screen and (max-width: 70em) {
-  
-    body {
-       
-    }         
-}
-
-/*** Up to 1040px ***/
-@media only screen and (max-width: 65em) {
-    
-    body {
-        
-    }    
-}
-
-/*** Up to 976px ***/
-@media only screen and (max-width: 61em) {
-  
-    body {
-    
-    }      
-}
 
 /*** Up to 880px ***/
 @media only screen and (max-width: 55em) {
@@ -308,31 +141,6 @@ footer{
 
 /************ Change Format ************/
 
-
-/*** Up to 800px ***/
-@media only screen and (max-width: 50em) {
- 
-    body {
-    
-    }    
-}
-
-/*** Up to 720px ***/
-@media only screen and (max-width: 45em) {
- 
-    body {
-     
-    }          
-}
-
-/*** Up to 640px ***/
-@media only screen and (max-width: 40em) {
-    
-    body {
-        
-    }      
-}
-
 /*** Up to 560px ***/
 @media only screen and (max-width: 35em) {
   
@@ -344,44 +152,4 @@ footer{
         font-size: 14vw;
     }
  
-}
-
-/*** Up to 480px ***/
-@media only screen and (max-width: 30em) {
-    
-    body {
-      
-    }        
-}
-
-/*** Up to 400px ***/
-@media only screen and (max-width: 25em) {
-
-    body {
-       
-    }   
-}
-
-/*** Up to 336px ***/
-@media only screen and (max-width: 21em) {
-   
-    body {
-      
-    }  
-}
-
-/*** Up to 256px ***/
-@media only screen and (max-width: 16em) {
-
-    body {
-      
-    }   
-}
-
-/*** Up to 224px ***/
-@media only screen and (max-width: 14em) {
-
-    body {
-        
-    }    
 }
