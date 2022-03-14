@@ -169,10 +169,6 @@ footer .flex-column .social,
     display: -webkit-flex;
 }
 
-header, main, footer {
-    width: 100%;
-}
-
 hr {
     width: 50%;
     margin: 0 auto 4rem;
