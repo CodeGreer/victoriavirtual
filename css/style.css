@@ -1544,6 +1544,8 @@ footer .flex-column .social {
     }
 
     header h4 {
+        width: 90%;
+        margin: inherit 5%;
         font-size: 6vw;
     }    
 
