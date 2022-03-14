@@ -860,6 +860,10 @@ footer .flex-column {
     margin: 2rem;
 }
 
+.quotation {
+    margin: 4rem 0 4rem !important;
+}
+
 footer .flex-column .social {
     flex-flow: column;
     justify-content: center;
@@ -877,16 +881,39 @@ footer .flex-column .social {
     margin: 1rem 2rem;
 }
 
-.social p {
+.copyright {
     font-size: 1.5vw;
     margin-top: 1rem;
 }
 
-.footer-commerce-logo {
-    width: 12%;
+.copyright + .copyright {
+    margin-top: 0;
+}
+
+.logos {
     position: absolute;
+    width: 12%;
     right: 5%;
-    bottom: 2rem;
+    bottom: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-qb-logo {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.footer-af-logo {
+    width: 100%;
+    padding-bottom: 1rem
+        
+}
+
+.footer-commerce-logo {
+    width: 100%;
 }
 
 
@@ -948,7 +975,14 @@ footer .flex-column .social {
         font-size: 1.5vw;
         padding: 2rem;
     }
-
+    
+    .logos {
+        width: 8%;
+    }
+    
+    footer {
+        padding: 10rem 0 2rem;
+    }
 }
 
 /*** Up to 1520px ***/
@@ -977,6 +1011,14 @@ footer .flex-column .social {
     .top {
         font-size: 1.2vw;
         padding: 1rem;
+    }
+    
+    .logos {
+        width: 10%;
+    }
+    
+    footer {
+        padding: 6rem 0 2rem;
     }
 }
 
@@ -1057,6 +1099,10 @@ footer .flex-column .social {
 
     .social p {
         font-size: 1.7vw;
+    }
+    
+    .logos {
+        width: 12%;
     }
     
     .contact-form-container {
@@ -1319,7 +1365,7 @@ footer .flex-column .social {
     }
 
     .grid-column {
-        grid-template-rows:  5rem 1fr;
+        grid-template-rows:  7rem 1fr;
     } 
     
     /* About Us Section */
@@ -1417,12 +1463,14 @@ footer .flex-column .social {
         width: 8%;
     }
 
-    .social p {
+    .copyright {
         font-size: 1.8vw;
+        margin-bottom: 0rem;
     }
 
-    .footer-commerce-logo {
-        width: 15%;
+    .logos {
+        width: 14%;
+        bottom: 4rem;
     }
     
     .top {
@@ -1451,6 +1499,10 @@ footer .flex-column .social {
     .top-commerce-logo {
         display: none;
     }
+    
+    .header-button {
+        margin-bottom: 2rem;
+    }
  
     /* Navigation */
     
@@ -1465,7 +1517,7 @@ footer .flex-column .social {
 
     #navigation ul li {
         padding: 0 0 2rem;
-        font-size: 4vw;
+        font-size: 5vw;
     }
     
     .menu-toggle {
@@ -1479,36 +1531,32 @@ footer .flex-column .social {
     /* Headings */
 
     h1 {
-        font-size: 4.25vw;
+        width: 90%;
+        font-size: 6vw;
     }
     
     h2 {
-        font-size: 5vw;
+        font-size: 8vw;
     }
 
     h3 {
-        font-size: 5vw;
+        font-size: 6.6vw;
     }
 
     header h4 {
-        font-size: 4vw;
+        font-size: 6vw;
     }    
 
     p, ul li {
-        font-size: 4.5vw;
+        font-size: 6vw;
     }
 
     .button {
-        font-size: 3vw;
+        font-size: 5vw;
     }
     
     .flex-row h2 {
-        padding: .5rem 1rem 0;
-    }
-
-    .flex-row .quarter {
-        width: 2rem;
-        height: 2rem;
+        padding: .5rem 0 0;
     }
     
     hr {
@@ -1518,8 +1566,9 @@ footer .flex-column .social {
     /* Time is Money Section */
     
     #time-money .overlay {
-        margin-top: -2rem;
-        padding: 5rem 0;
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+        margin-top: 0rem;
+        padding: 2rem 0;
     }
     
     #time-money .overlay div {
@@ -1530,7 +1579,7 @@ footer .flex-column .social {
     
     #why-hire .flex-row,
     #services .flex-row {
-        padding: 7rem 0 0;
+        padding: 10rem 0 0;
     }
     
     #why-hire {
@@ -1541,11 +1590,17 @@ footer .flex-column .social {
         clip-path: polygon(0 7%, 100% 2%, 100% 98%, 0 93%);
     }
     
+    #why-hire button,
+    .services-button {
+        margin-bottom: 3rem;
+    }
+    
     /* About Us Section */
     
     #about .overlay {
-        padding: 6rem 5% 4rem;
-        margin-top: -2.5rem;
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+        padding: 4rem 5% 0rem;
+        margin-top: 0rem;
     }
     
     /* Services Section */
@@ -1564,13 +1619,13 @@ footer .flex-column .social {
     }
 
     .services-grid h2 {
-        font-size: 5vw;
+        font-size: 7vw;
     }
      
     /* A La Carte Section */
 
     #a-la-carte {
-        padding: 1rem 5% 0rem;
+        padding: 0rem 5% 0rem;
     }
 
     .a-la-carte-grid {
@@ -1581,11 +1636,11 @@ footer .flex-column .social {
     }
     
     #a-la-carte h4 {
-        font-size: 5vw;
+        font-size: 7vw;
     }
     
     #a-la-carte p {
-        font-size: 4.5vw;
+        font-size: 6vw;
     }
     
     .one {
@@ -1639,26 +1694,44 @@ footer .flex-column .social {
     }
 
     .flex-column > p {
-        font-size: 3.5vw;
+        font-size: 6vw;
+        text-align: center;
         width: 100%;
         padding-top: 4rem;
     }
 
     .flex-column .social a {
-        width: 15%;
+        width: 33%;
+        margin: 0;
+        padding: 0 1rem;
     }
-
-    .social p {
-        font-size: 3.5vw;
-    }
-
-    .footer-commerce-logo {
+    
+    .logos {
         position: relative;
-        right: 0;
-        bottom: 0;
+        width: 100%;
+        margin: 6rem auto 0;
+        right: auto;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    
+    .footer-qb-logo {
+        width: 40%;
+        padding: 1rem;
+    }
+    
+    .footer-af-logo {
+        width: 30%;
+        padding: 1rem;
+    }
+    
+    .footer-commerce-logo  {
         width: 50%;
-        padding: 0;
-        margin: 4rem 25% 0;
+        margin: 0 25%;
+    }
+    
+    .copyright {
+        padding: 0 !important;
     }
     
     .contact-form-container {
