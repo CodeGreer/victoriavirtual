@@ -88,7 +88,7 @@ body {
     --offset: 50px; 
     position: sticky;  
     bottom: 1rem;
-    left: 87%;
+    left: 85%;
     place-self: end;
     margin-top: calc(100vh + var(--offset));
     text-decoration: none;
