@@ -353,26 +353,61 @@ ul .no-disc .flex-row .quarter-purple {
     background-color: #F4E05D;
 }
 
-/* Menu */ 
 
-.logo {
-    position: absolute;
-    width: 15%; 
-    margin: 2rem 2% 0;
-    z-index: 9;
-}
-
-.top-commerce-logo {
+/* .top-commerce-logo {
     position: absolute;
     top: 2rem;
     right: 2%;
     width: 15%;
     z-index: 9;
+} */
+
+/* Header */
+
+header {
+    width: 100%;
+    background-image: url(../images/victoria-virtual-bookkeeping-header-blue.svg), url(../images/victoria-virtual-bookkeeping-header-border-green.svg);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center calc(100% - 25px), center calc(100% + 0px);
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
+#top-nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0rem;
+}
+
+#top-nav .top-nav-logo,
+#top-nav .top-nav-login {
+    flex: 1;
+}
+
+#top-nav .top-nav-menu {
+    flex: 4;
+    margin: 0 1rem 0 2rem;
+}
+
+.logo {
+    width: 80%;
+    margin: 2rem;
+    z-index: 9;
+}
+
+/* Menu */ 
+
 #navigation {
-    background-color: #213a6c;
-    padding: 2rem 20%;
+    padding: 2rem 0;
 } 
 
 #navigation ul {
@@ -409,19 +444,145 @@ a.menu:hover {color: #F4E05D; border-bottom: .2rem solid #F4E05D;}
 a.menu:active {color: #F4E05D;}  
 
 
+/* Liscio */
 
-/* Header */
+#liscio-toggle {
+    z-index: 9;
+    margin: 2rem;
+    font-size: 1vw;
+}
 
-header {
+.Login_Liscio {
+    width: 100%;  
+    align-items: center;
+    text-align: center;
+    margin: auto;  
+    max-width: 500px; 
+    flex-wrap: wrap;
+    padding-top: 3%;
+    border: 2px solid #c8c8c8;
+    padding: 15px; 
+    min-height: 450px;
+    background: #f9f9f9;
+}
+
+.Login_Liscio .logo-img { 
+    display: inline-block; 
+    width: 100%; 
+    margin: auto;
+}
+
+.Login_Liscio .logo-img {
     width: 100%;
-    height: 100vh;
-    background-image: url(../images/victoria-virtual-bookkeeping-header-blue.svg), url(../images/victoria-virtual-bookkeeping-header-border-green.svg);
-    background-size: cover, cover;
-    background-repeat: no-repeat, no-repeat;
-    background-position: center calc(100% - 25px), center calc(100% + 0px);
-    background-color: transparent;
+    margin: auto;
+    max-width: 120px;
+    height: auto;
+}
+
+.Login_Liscio form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin: 0px auto;
+}
+
+.Login_Liscio h1 {
+    color: #555758;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 30px 0 15px;
+    font-weight: 500;
+}
+
+.Login_Liscio input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 15px;
+    font-size: 15px; 
+    border: 2px solid #c8c8c8;
+    color: #757575;
+    box-shadow: inset 0px 0px 5px 0px rgba(187,187,187,0.6)
+}
+
+.Login_Liscio .login-btn {
+    width: 100%;
+    max-width: 93px;
+    height: 54px;
+    line-height: 52px;
+    background-color: #555758;
+    color: #fff; 
+    border: 1px solid #555758; 
+    font-size: 20px; 
+    margin: 10px auto;
+} 
+
+  
+.liscio-menu {
     position: relative;
-    display: grid;
+    left: auto;
+    top: auto;
+    height: auto;
+}
+    
+#liscio-panel {
+    width: 50%;
+    margin: 0;
+    padding: 6rem 0;
+} 
+
+.liscio-menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: left 0.3s ease,
+              box-shadow 0.3s ease;
+    z-index: 10;
+    background-color: #213a6c;
+}
+
+.liscio-menu:target {
+    left: 0%;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+    box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.liscio-menu:target .liscio-close {
+    z-index: 12;
+}
+
+.liscio-menu:target + .backdrop {
+  position: absolute;
+  display: block;  
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+#liscio-panel .liscio-close {
+    display: block;
+    position: absolute;
+    left: 49%;
+    top: 0;
+    font-size: 4vw;
+    padding: 0;
+    color: #fff;
+}
+
+.liscio-close:hover {
+    text-decoration: none;
 }
 
 #header-content {
@@ -940,18 +1101,39 @@ footer .flex-column .social {
     background-color: #fff;
 }
 
+
+
+
 /**** Mobile Media Queries ****/
 
 
 /*** Up to 2640px ***/
 @media only screen and (max-width: 165em) {
     
+    /* Header */
+
+    header {
+        padding-bottom: 5rem;
+    }
+
+    #top-nav {
+        margin-bottom: 5rem;
+    }
+
+    #header-content {
+        padding-bottom: 10rem;
+    }
+
+    header h4 {
+        margin: 0 0 4rem;
+    }
+
     h1 {
         font-family: 'SortsMill', serif;
         font-size: 2vw;
         width: 80%;
         margin: 0 auto;
-        padding-bottom: 10rem;
+        padding: 5rem 0;
         text-align: center;
         color: #fff;
     }
@@ -988,11 +1170,20 @@ footer .flex-column .social {
 /*** Up to 1520px ***/
 @media only screen and (max-width: 95em) {
     
+    /* Header */
+
+    #top-nav {
+        margin-bottom: 2rem;
+    }
+
+    #header-content {
+        padding-bottom: 2rem;
+    }
+    
     h1 {
-    width: 80%;
-    margin: 2rem auto;
-    padding-bottom: 0;
-}
+        width: 80%;
+        padding: 0 0 5rem;
+    }
     
     #why-hire .flex-row,
     #services .flex-row {
@@ -1025,12 +1216,23 @@ footer .flex-column .social {
 /*** Up to 1040px ***/
 @media only screen and (max-width: 65em) {
     
+    /* Header */
+
+    #top-nav {
+        margin-bottom: 2rem;
+    }
+
+    #header-content {
+        padding-bottom: 2rem;
+    }
+    
     /* Headings */
 
     h1 {
         font-size: 2.2vw;
         width: 60%;
-        margin: 2rem auto;
+        padding: 0 auto;
+        margin-bottom: 0rem;
     }
 
     h3 {
@@ -1039,6 +1241,7 @@ footer .flex-column .social {
 
     header h4 {
         font-size: 2vw;
+        margin-bottom: 2rem;
     }    
 
     p, ul li {
@@ -1123,12 +1326,6 @@ footer .flex-column .social {
         height: auto;
     }    
     
-    h1 {
-        font-size: 2.2vw;
-        width: 80%;
-        margin: 4rem 10% 4rem;
-    }
-    
     header h4 {
         font-size: 2.4vw;
         margin: 0 0 2rem;
@@ -1171,19 +1368,29 @@ footer .flex-column .social {
 /*** Up to 800px ***/
 @media only screen and (max-width: 50em) {
     
-    
-    .logo {
-        position: relative;
-        width: 25%; 
-        margin: 2rem 37.5% 0;
+    #top-nav {
+        display: block;
     }
     
-    .top-commerce-logo {
+    #top-nav .top-nav-login #liscio-toggle {
         position: absolute;
-        top: 2rem;
-        left: 5%;
-        right: auto;
-        width: 15%;
+        top: 0;
+        left: 0;
+        font-size: 1.75vw;
+    }
+    
+    .liscio-menu {
+        width: 80% !important;
+    }
+    
+    .liscio-close {
+        font-size: 10vw !important;
+        line-height: normal;
+    }
+    
+    #top-nav .top-nav-logo {
+        width: 50%;
+        margin: 0 25%;
     }
  
     /* Navigation */
@@ -1195,8 +1402,8 @@ footer .flex-column .social {
     } 
 
     #navigation ul {
-        width: 90%;
-        padding: 0 5%;
+        width: 80%;
+        padding: 0 10%;
         flex-flow: column;
         justify-content: flex-end;
     }
@@ -1242,7 +1449,7 @@ footer .flex-column .social {
         transition: left 0.3s ease,
                   box-shadow 0.3s ease;
         z-index: 10;
-        background-color: #EFEFE9;
+        background-color: #213a6c;
     }
 
     .main-menu ul {
@@ -1319,7 +1526,8 @@ footer .flex-column .social {
     h1 {
         font-size: 3vw;
         width: 80%;
-        margin: 2rem auto;
+        margin: 0 auto;
+        padding-bottom: 2rem;
     }
     
     h2 {
@@ -1489,19 +1697,24 @@ footer .flex-column .social {
 
 /*** Up to 560px ***/
 @media only screen and (max-width: 35em) {
+    
+    #top-nav .top-nav-logo {
+        width: 80%;
+        margin: 5rem 10% 0;
+    }
   
-  .logo {
-        position: relative;
-        width: 50%; 
-        margin: 5rem 25% 0;
+    #top-nav .top-nav-login #liscio-toggle {
+        margin: 1rem;
+        font-size: 3vw;
     }
     
-    .top-commerce-logo {
-        display: none;
+    .liscio-close {
+        font-size: 20vw !important;
+        line-height: 5rem;
     }
     
-    .header-button {
-        margin-bottom: 2rem;
+    .Login_Liscio {
+        width: 80%;  
     }
  
     /* Navigation */
@@ -1532,7 +1745,7 @@ footer .flex-column .social {
 
     h1 {
         width: 90%;
-        font-size: 6vw;
+        font-size: 5.7vw;
     }
     
     h2 {
@@ -1546,7 +1759,7 @@ footer .flex-column .social {
     header h4 {
         width: 90%;
         margin: inherit 5%;
-        font-size: 6vw;
+        font-size: 5.7vw;
     }    
 
     p, ul li {
@@ -1703,9 +1916,9 @@ footer .flex-column .social {
     }
 
     .flex-column .social a {
-        width: 33%;
+        width: 15%;
         margin: 0;
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
     
     .logos {

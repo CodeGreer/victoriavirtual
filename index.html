@@ -39,7 +39,7 @@
     
 <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-
+    
 </head>
   
 <body> 
@@ -51,41 +51,66 @@
     <header> 
         
         <!-- Navigation --> 
-    <div>
+        <div id="top-nav">
+            <div class="top-nav-logo">
+                <a href="index.html"><img class="logo" alt="Victoria Virtual Bookkeeping" src="images/victoria-virtual-bookkeeping-logo-white.png"></a>
+            </div>
 
-    <a href="index.html"><img class="logo" alt="Victoria Virtual Bookkeeping" src="images/victoria-virtual-bookkeeping-logo-white.png"></a>
-        
-    <a href="https://conyers-rockdale.com/" target="_blank"><img class="top-commerce-logo" alt="Conyers Rockdale Chamber of Commerce 2022 member" src="images/conyers-rockdale-chamber-of-commerce-2022.png"></a>
+            <div class="top-nav-menu">
+                <a href="#navigation" id="main-menu-toggle" class="menu-toggle">
+                    <span class="none">&#9776;</span>
+                </a>
 
-    
-    <a href="#navigation" id="main-menu-toggle" class="menu-toggle">
-        <span class="none">&#9776;</span>
-    </a>
+                <nav id="navigation" class="main-menu">
 
-    <nav id="navigation" class="main-menu">
+                    <a href="#tab-navigation" id="main-menu-close" class="menu-close">
+                      <span>&#215;</span>
+                    </a>
 
-        <a href="#tab-navigation" id="main-menu-close" class="menu-close">
-          <span>&#215;</span>
-        </a>
+                     <ul>
+                        <li class="hide-mobile">|</li>
+                        <li><a class="menu" href="#why-hire">Why hire a bookkeeper</a></li>
+                        <li class="hide-mobile">|</li>
+                        <li><a class="menu" href="#services">Services</a></li>
+                        <li class="hide-mobile">|</li>
+                        <li><a class="menu" href="#about">About</a></li>
+                        <li class="hide-mobile">|</li>
+                        <li><a class="menu" href="contact.html">Contact</a></li>
+                        <li class="hide-mobile">|</li>
+                        <li><a class="menu" href="tel:404-436-2906">404-436-2906</a></li>
+                        <li class="hide-mobile">|</li>
+                    </ul>
+                </nav>
 
-         <ul>
-            <li class="hide-mobile">|</li>
-            <li><a class="menu" href="#why-hire">Why hire a bookkeeper</a></li>
-            <li class="hide-mobile">|</li>
-            <li><a class="menu" href="#services">Services</a></li>
-            <li class="hide-mobile">|</li>
-            <li><a class="menu" href="#about">About</a></li>
-            <li class="hide-mobile">|</li>
-            <li><a class="menu" href="contact.html">Contact</a></li>
-            <li class="hide-mobile">|</li>
-            <li><a class="menu" href="tel:404-436-2906">404-436-2906</a></li>
-            <li class="hide-mobile">|</li>
-        </ul>
-    </nav>
+                <a href="#main-menu-toggle" class="backdrop" hidden></a>
+            </div>
+            
+            <div class="top-nav-login">
+                <button id="liscio-toggle" class="button header-button button--vvb liscio-toggle" onclick="window.location.href='#liscio-panel';">CLIENT LOGIN</button>   
 
-    <a href="#main-menu-toggle" class="backdrop" hidden></a>
-    </div>
+                <div id="liscio-panel" class="liscio-menu">
+                
+                <a href="#tab-liscio" id="liscio-close" class="liscio-close">
+                      <span>&#215;</span>
+                    </a>
+                <div class="Login_Liscio">
+                    <form name='form' method='post' action='https://prodapi.liscio.me/api/v1/remote_login' enctype="application/x-www-form-urlencoded">
+                        <img class="logo-img" src="https://turmericp.liscio.me/public/logo_client_logo.png" alt="" />
+                            <h1>Client Communication</h1>
+                            <input required type="email" name="user[email]" id="email" placeholder="Email" />
+                            <input required type="password" name="user[password]" id="password" placeholder="Password" />
+                            <input type="hidden" id='company_name' value='https://victoriakeepsbooks.liscio.me/' name='user[company_name]' />
+                            <button type="submit" name="submit" class="login-btn">Login</button>
+                        </form>
+                    </div>   
+                </div>
+
+                <a href="#liscio-toggle" class="backdrop" hidden></a>
+            </div>
+         
+        </div>
 <!-- End Navigation --> 
+        
         <div id="header-content">
 
             <h1 class="header-para">Bookkeeping and accounting services located in Conyers, Georgia, but available nationwide. We specialize in small business finances and tax readiness and compliance.</h1>
@@ -344,7 +369,6 @@
                 </div>
             </div> -->
         </section>
-
         
         <!-- <section class="fifth">      
             
